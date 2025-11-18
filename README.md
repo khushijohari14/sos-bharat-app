@@ -18,17 +18,15 @@ Smooth UI with animations, OTP login & state selector
 
 🛠️ Technology Used
 
-React Native (Expo)
+-React Native (Expo)
 
-JavaScript (ES6)
+=JavaScript (ES6)
 
-Expo-Location API
+=Expo-Location API
 
-Expo-SMS
+-Expo-SMS
 
-React Navigation
+-React Navigation
 
-AsyncStorage
+-AsyncStorage
 
-
-Just tell me!
