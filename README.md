@@ -31,6 +31,4 @@ React Navigation
 AsyncStorage
 
 
-📦 Instructions to build APK
-
 Just tell me!
