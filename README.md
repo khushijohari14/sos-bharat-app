@@ -20,9 +20,9 @@ Smooth UI with animations, OTP login & state selector
 
 -React Native (Expo)
 
-=JavaScript (ES6)
+-JavaScript (ES6)
 
-=Expo-Location API
+-Expo-Location API
 
 -Expo-SMS
 
