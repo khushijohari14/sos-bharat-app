@@ -1,0 +1,12 @@
+<svg width="540" height="46" viewBox="0 0 540 46" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background bar -->
+  <rect x="0" y="0" width="540" height="46" rx="8" fill="#2a0f0f"/>
+  <rect x="0" y="0" width="540" height="46" rx="8" fill="none" stroke="#E24B4A" stroke-width="1" opacity="0.4"/>
+  <!-- Blinking dot -->
+  <circle cx="22" cy="23" r="6" fill="#E24B4A">
+    <animate attributeName="opacity" values="1;0.15;1" dur="1.3s" repeatCount="indefinite"/>
+  </circle>
+  <!-- Alert text -->
+  <text x="40" y="29" font-family="Arial, sans-serif" font-size="13" fill="#f0a0a0" font-weight="bold">LIVE</text>
+  <text x="74" y="29" font-family="Arial, sans-serif" font-size="13" fill="#cccccc">  Sending SOS · GPS location attached · 112 on standby</text>
+</svg>
