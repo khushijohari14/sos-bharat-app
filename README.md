@@ -1,12 +1,8 @@
 <div align="center">
 
-<img src="assets/sos_pulse.svg" width="160" alt="SOS Bharat Logo"/>
-
-<img src="assets/title.svg" width="400" alt="SOS Bharat"/>
-
-**Emergency Alert App for Every Indian Citizen**
-
-<img src="assets/live_alert.svg" width="500" alt="Live Alert Status"/>
+<img src="sos_pulse.svg" width="160" alt="SOS Bharat Logo"/>
+<img src="title.svg" width="400" alt="SOS Bharat"/>
+<img src="live_alert.svg" width="500" alt="Live Alert Status"/>
 
 <br/>
 
