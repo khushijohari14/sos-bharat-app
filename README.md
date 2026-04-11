@@ -1,15 +1,30 @@
 <div align="center">
 
-# 🚨 SOS Bharat
+<!-- Animated pulsing SOS badge -->
+<svg width="120" height="120" viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg">
+  <circle cx="60" cy="60" r="50" fill="#E24B4A" opacity="0.15">
+    <animate attributeName="r" values="50;58;50" dur="2s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0.15;0;0.15" dur="2s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="60" cy="60" r="40" fill="#E24B4A" opacity="0.25">
+    <animate attributeName="r" values="40;50;40" dur="2s" begin="0.3s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0.25;0;0.25" dur="2s" begin="0.3s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="60" cy="60" r="34" fill="#E24B4A"/>
+  <text x="60" y="67" text-anchor="middle" font-family="sans-serif" font-size="18" font-weight="bold" fill="white" letter-spacing="2">SOS</text>
+</svg>
 
-### Emergency Alert App for India
+# SOS Bharat 🚨
 
-**A React Native mobile app that sends instant SOS alerts with live GPS location to your trusted contacts — built for every Indian citizen.**
+### Emergency Alert App for Every Indian Citizen
 
-[![React Native](https://img.shields.io/badge/React_Native-Expo-blue?logo=expo)](https://expo.dev/)
-[![Language](https://img.shields.io/badge/Language-TypeScript%20%7C%20JavaScript-yellow)](https://www.typescriptlang.org/)
-[![Platform](https://img.shields.io/badge/Platform-Android%20%7C%20iOS-green)](https://reactnative.dev/)
-[![License](https://img.shields.io/badge/License-MIT-lightgrey)](LICENSE)
+A React Native mobile app that sends **instant SOS alerts with live GPS location** to your trusted contacts — no internet required.
+
+[![React Native](https://img.shields.io/badge/React_Native-Expo-black?style=flat-square&logo=expo)](https://expo.dev/)
+[![TypeScript](https://img.shields.io/badge/TypeScript-84.9%25-3178C6?style=flat-square&logo=typescript)](https://www.typescriptlang.org/)
+[![Platform](https://img.shields.io/badge/Platform-Android%20%7C%20iOS-green?style=flat-square)](https://reactnative.dev/)
+[![License](https://img.shields.io/badge/License-MIT-lightgrey?style=flat-square)](LICENSE)
+[![PRs Welcome](https://img.shields.io/badge/PRs-Welcome-brightgreen?style=flat-square)](https://github.com/khushijohari14/sos-bharat-app/pulls)
 
 </div>
 
@@ -17,36 +32,38 @@
 
 ## 📖 About
 
-SOS Bharat is a front-end emergency alert mobile application designed to help users in India quickly reach out for help during critical situations. With a single tap, it sends an SOS message along with your **live GPS location** to your saved emergency contacts via SMS — no internet required for alerts.
+SOS Bharat is a front-end emergency alert mobile application built for India. In a critical moment — a medical emergency, a fire, a security threat — you shouldn't be fumbling with your phone. One tap sends your **live GPS coordinates** via SMS to every contact you trust. No internet. No delay.
 
-Whether it's a medical emergency, a fire, a safety threat, or a situation requiring police help, SOS Bharat puts help at your fingertips.
+> Built for Police 🚔 · Fire 🔥 · Medical 🏥 · Women Safety 👩‍⚕️ — and more.
 
 ---
 
 ## ✨ Features
 
-| Feature | Description |
-|---|---|
-| 🆘 **One-Tap SOS Alert** | Send an emergency alert instantly with a single tap |
-| 📍 **Live GPS Location** | Automatically attaches your real-time coordinates to every alert |
-| 📱 **SMS-Based Alerts** | Sends alerts via SMS — works without internet |
-| 👥 **Emergency Contacts** | Add and manage your trusted emergency contacts |
-| 📞 **Direct 112 Calling** | One-tap call to India's national emergency number |
-| 🗂️ **Emergency Categories** | Quick access to Police, Fire, Medical, Women Safety & more |
-| 🔐 **OTP Login** | Secure phone number-based OTP authentication |
-| 🗺️ **State Selector** | Localized experience based on your state |
-| 🎨 **Smooth Animations** | Polished UI with fluid transitions |
+| # | Feature | Description |
+|---|---------|-------------|
+| ⚡ | **One-Tap SOS** | Sends an emergency alert instantly with a single tap |
+| 📍 | **Live GPS Location** | Attaches real-time coordinates to every alert |
+| 💬 | **SMS-Based Alerts** | Works without internet — pure SMS delivery |
+| 👥 | **Emergency Contacts** | Add and manage your trusted contacts |
+| 📞 | **Direct 112 Calling** | One-tap call to India's national emergency number |
+| 🗂️ | **Emergency Categories** | Police · Fire · Medical · Women Safety & more |
+| 🔐 | **OTP Login** | Secure phone-number based authentication |
+| 🗺️ | **State Selector** | Localized experience based on your state |
+| ✨ | **Smooth Animations** | Polished UI with fluid transitions |
 
 ---
 
 ## 🛠️ Tech Stack
 
-- **Framework:** React Native (Expo)
-- **Language:** TypeScript / JavaScript (ES6)
-- **Location:** `expo-location` — for live GPS coordinates
-- **Messaging:** `expo-sms` — for sending SMS alerts
-- **Navigation:** React Navigation
-- **Storage:** AsyncStorage — for persisting emergency contacts locally
+```
+React Native (Expo)    →  Cross-platform mobile framework
+TypeScript / ES6       →  Primary language (84.9% of codebase)
+expo-location          →  Live GPS coordinates
+expo-sms               →  SMS alert delivery
+React Navigation       →  Screen routing
+AsyncStorage           →  Local contact persistence
+```
 
 ---
 
@@ -54,15 +71,15 @@ Whether it's a medical emergency, a fire, a safety threat, or a situation requir
 
 ```
 sos-bharat-app/
-├── app/                        # App screens and routing (Expo Router)
+├── app/                        # Screens & routing (Expo Router)
 ├── components/                 # Reusable UI components
-├── constants/                  # App-wide constants (colors, strings, etc.)
+├── constants/                  # Colors, strings, config
 ├── hooks/                      # Custom React hooks
-├── scripts/                    # Utility scripts
 ├── sos-bharat/                 # Core SOS feature logic
-├── assets/images/              # App images and icons
+├── assets/images/              # App icons and images
+├── scripts/                    # Utility scripts
 ├── EmergencyAlertScreen.js     # SOS alert trigger screen
-├── EmergencyContactsScreen.js  # Manage emergency contacts screen
+├── EmergencyContactsScreen.js  # Emergency contacts manager
 ├── app.js                      # App entry point
 └── app.json                    # Expo configuration
 ```
@@ -73,9 +90,9 @@ sos-bharat-app/
 
 ### Prerequisites
 
-- [Node.js](https://nodejs.org/) (v18 or above)
+- [Node.js](https://nodejs.org/) v18+
 - [Expo CLI](https://docs.expo.dev/get-started/installation/)
-- A physical Android/iOS device or emulator
+- Expo Go app on your Android/iOS device
 
 ### Installation
 
@@ -89,49 +106,75 @@ cd sos-bharat-app
 # 3. Install dependencies
 npm install
 
-# 4. Start the Expo development server
+# 4. Start the Expo server
 npx expo start
 ```
 
-Scan the QR code with the **Expo Go** app on your phone to run it instantly.
+> Scan the QR code with **Expo Go** to run instantly on your phone.
 
 ---
 
 ## 📲 How It Works
 
-1. **Set up contacts** — Add your trusted emergency contacts (family, friends) in the app.
-2. **In an emergency** — Tap the SOS button on the home screen.
-3. **Auto-alert** — The app fetches your live GPS location and sends an SMS to all saved contacts with your coordinates.
-4. **Call 112** — Use the direct dial button to reach national emergency services instantly.
+```
+[User] ──tap──▶ [SOS Button]
+                    │
+                    ▼
+           [Fetch live GPS via expo-location]
+                    │
+                    ▼
+           [Compose SMS with coordinates]
+                    │
+                    ▼
+   [Send to all saved emergency contacts via expo-sms]
+                    │
+                    ├──▶ Contact 1 ✅
+                    ├──▶ Contact 2 ✅
+                    └──▶ Contact 3 ✅
+
+   [Parallel] ──▶ Direct 112 dial available at all times
+```
+
+1. **Set up contacts** — Add trusted emergency contacts (family, friends).
+2. **In an emergency** — Tap the SOS button.
+3. **Auto-alert** — GPS is fetched and SMS is sent to all contacts instantly.
+4. **Call 112** — Use the dedicated button for national emergency services.
 
 ---
 
-## 🔮 Roadmap / Future Scope
+## 🔮 Roadmap
 
-- [ ] Backend integration for real-time tracking
-- [ ] WhatsApp/email alert support
-- [ ] Shake-to-SOS trigger (hands-free activation)
-- [ ] Offline map support
-- [ ] Multi-language support (Hindi, regional languages)
-- [ ] Admin dashboard for NGOs / rescue teams
+- [ ] Backend integration for real-time location tracking
+- [ ] WhatsApp & email alert support
+- [ ] Shake-to-SOS — hands-free activation
+- [ ] Offline maps
+- [ ] Multi-language support (Hindi + regional languages)
+- [ ] Admin dashboard for NGOs / rescue organizations
 
 ---
 
 ## 🤝 Contributing
 
-Contributions are welcome! Feel free to open an issue or submit a pull request.
+Contributions are always welcome!
 
 ```bash
-# Fork the repo, create your branch, and open a PR
+# 1. Fork this repo
+# 2. Create your branch
 git checkout -b feature/your-feature-name
+
+# 3. Commit your changes
+git commit -m "Add: your feature description"
+
+# 4. Push and open a Pull Request
+git push origin feature/your-feature-name
 ```
 
 ---
 
 ## 👩‍💻 Author
 
-**Khushi Johari**
-[GitHub](https://github.com/khushijohari14)
+**Khushi Johari**  
+[GitHub →](https://github.com/khushijohari14)
 
 ---
 
@@ -142,5 +185,5 @@ This project is licensed under the [MIT License](LICENSE).
 ---
 
 <div align="center">
-  <sub>Built with ❤️ for the safety of every Indian citizen.</sub>
+  <sub>🇮🇳 Built with care for the safety of every Indian citizen.</sub>
 </div>
